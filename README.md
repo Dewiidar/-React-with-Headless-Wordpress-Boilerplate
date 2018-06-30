@@ -8,6 +8,9 @@
 
 4. Created a database for WP
 5. WP's dashboard username:  **admin** & password: **admin**
+
+    * You need to create a new SQL database from your phpMyAdmin page as well with any name and it's charachter coding is preferred to be **utf8_unicode_ci**
+
 6. Installed the following WP plugins:
 
     * custom-post-type-ui.1.5.8
@@ -16,15 +19,27 @@
 
 7. We exported wp database to be used on another development pc or even to import it on the live server
     
-    * You need to create a new SQL database from your phpMyAdmin page with any name and it's charachter coding is preferred to be **utf8_unicode_ci**
-
-8. Open the react_wp_boilerplate_db.sql file attached below and Replace **http://localhost:8888** with your local machine's development URL before importing it into the database
+    * You need to open the react_wp_boilerplate_db.sql file attached below and Replace **http://localhost:8888** with your local machine's development URL then importing it into the database
 
     * https://goo.gl/y2Hce4
 
-9. import the sql file into the database 
+10. You need to go to "public > wordpress > wp-config-sample.php"  then open it and adjust the following:
 
-10. we create the git ignore file and ignored the build folder and node modules.
+```php
+/** The name of the database for WordPress */
+define('DB_NAME', 'database_name_here');
+
+/** MySQL database username (usually = root) */
+define('DB_USER', 'username_here');
+
+/** MySQL database password (usually = ''  or  root) */
+define('DB_PASSWORD', 'password_here');
+
+/** MySQL hostname */
+define('DB_HOST', 'localhost');
+```
+
+11. we create the git ignore file and ignored the build folder and node modules.
 
 ___
 
