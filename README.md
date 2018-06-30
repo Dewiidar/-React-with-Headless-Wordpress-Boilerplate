@@ -1,13 +1,14 @@
 # Headless React-Wordpress Boilerplate
 
 ## How it Has Been Created & Getting Started:
-1. We Downloaded React
-2. Installed Wordpress at the public folder of react
+1. We Downloaded [Create React App](https://github.com/facebookincubator/create-react-app).
+2. Downloaded & Installed WordPress 4.9.6 at the public folder of react
 
     * For production we need to copy the WP folder manually to the Build folder of react after we run “yarn build” command
 
-4. Created a database for WP
-5. WP's dashboard username:  **admin** & password: **admin**
+4. Created a database for WP through phpMyAdmin
+
+5. Completed the intallation and Set WP's dashboard username:  **admin** & password: **admin**
 
     * You need to create a new SQL database from your phpMyAdmin page as well with any name and it's charachter coding is preferred to be **utf8_unicode_ci**
 
